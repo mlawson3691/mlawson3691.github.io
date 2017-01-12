@@ -4,8 +4,19 @@ $(document).ready(function() {
 
   $('.displayed-project').fadeIn();
 
+  // show skills page
+  $('#skills').click(function() {
+    $('.project').each(function() {
+      $(this).fadeOut();
+    });
+    setTimeout(function() {
+      $('#skills-page').fadeIn();
+    }, 500);
+  });
+
   // match button text to project text to show clicked project
   $('#project-nav > div').click(function() {
+    $('#skills-page').fadeOut();
     var clicked = $(this).children('div').text();
     $('.project').each(function() {
       var current = $(this).children('h2').text();

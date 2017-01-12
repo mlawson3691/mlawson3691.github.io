@@ -11,40 +11,51 @@
   <title>Mark Lawson | Portfolio</title>
 </head>
 <body>
-  <div class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <h1 class="navbar-brand">Mark Lawson</h1>
-        <h3 class="navbar-brand small">Web Developer</h3>
-      </div>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://github.com/mlawson3691" target="_blank">
+  <div class='row'>
+    <div id='sidebar' class='col-sm-3'>
+      <div class='wrapper'>
+        <h1>Mark Lawson</h1>
+        <h3 class='smaller'>Web Developer</h3>
+        <div id='my-links'>
+          <a href="https://github.com/mlawson3691" target="_blank">
             <img class='contact-icon' src='images/github.svg' alt='Github Link'>
-          </a></li>
-          <li><a href="https://www.linkedin.com/in/mlawson3691" target="_blank">
+          </a>
+          <a href="https://www.linkedin.com/in/mlawson3691" target="_blank">
             <img class='contact-icon' src='images/linkedin.svg' alt='LinkedIn Link'>
-          </a></li>
-          <li><a href="mailto:mlawson3691@gmail.com">
+          </a>
+          <a href="mailto:mlawson3691@gmail.com">
             <img class='contact-icon' src='images/email.svg' alt='Email Link'>
-          </a></li>
-        </ul>
-      </div>
-    </div>
-  </div> <!-- .navbar -->
-  <div class='wrapper'>
-    <div class='row'>
-      <div id='main' class='col-xs-12 col-sm-9 col-sm-push-3'>
+          </a>
+        </div>
+        <hr>
+        <h3 id='skills'>SKILLS</h3>
+        <hr>
+        <h3>PROJECTS</h3>
+        <div id='project-nav'>
+          <div id='splore'>
+            <div class='screen'></div>
+            <div class='menu-project-title'>SPLORE</div>
+          </div>
+          <div id='lrp'>
+            <div class='screen'></div>
+            <div class='menu-project-title'>Leaf, Root, &amp; Petal</div>
+          </div>
+          <div id='geo'>
+            <div class='screen'></div>
+            <div class='menu-project-title'>Geography Quiz</div>
+          </div>
+        </div>
+        <div id='footer'>
+          <p>&copy; 2017 Mark Lawson</p>
+        </div>
+      </div><!-- .wrapper -->
+    </div><!-- #sidebar -->
+    <div id='main' class='col-sm-9'>
+      <div class='wrapper'>
         <div class='project displayed-project'>
           <h2 class='project-title'>SPLORE</h2>
           <a href='https://glacial-lowlands-59035.herokuapp.com/' class='project-link' target='_blank'>[ visit live site ]</a>
-          <img class='img-responsive' src='images/splore.png' alt='Screenshot of SPLORE'>
+          <img src='images/splore.png' alt='Screenshot of SPLORE'>
           <div class='row'>
             <div class='col-md-7'>
               <p>This application serves as a tool for users to plan and reflect on their travels. Users can search other users' trips by city for inspiration. Users can also create and edit trip itineraries, as well as leave feedback on their experiences.</p>
@@ -63,7 +74,7 @@
         <div class='project'>
           <h2 class='project-title'>Leaf, Root, &amp; Petal</h2>
           <a href='http://live-leaf-root-petal.pantheonsite.io/' class='project-link' target='_blank'>[ visit live site ]</a>
-          <img class='img-responsive' src='images/lrp.png' alt='Screenshot of LRP'>
+          <img src='images/lrp.png' alt='Screenshot of LRP'>
           <div class='row'>
             <div class='col-md-7'>
               <p>This application is an eCommerce site representing a personal business idea selling natural, homemade soaps and cosmetics. Administrators can upload products to the site and post articles to the blog, while other users can browse the store and blog, add items to their cart, and checkout.</p>
@@ -82,7 +93,7 @@
         <div class='project'>
           <h2 class='project-title'>Geography Quiz</h2>
           <a href='https://mlawson3691.github.io/api-practice/' class='project-link' target='_blank'>[ visit live site ]</a>
-          <img class='img-responsive' src='images/geo.png' alt='Screenshot of Geography Quiz'>
+          <img src='images/geo.png' alt='Screenshot of Geography Quiz'>
           <div class='row'>
             <div class='col-md-7'>
               <p>This application serves as a geography quiz game where the computer names a country and the user must pinpoint that country on the map. Once a user guesses wrong, their score resets.</p>
@@ -98,24 +109,72 @@
             </div>
           </div>
         </div><!-- .project -->
-      </div><!-- #main -->
-      <div id='sidebar' class='col-xs-12 col-sm-3 col-sm-pull-9'>
-        <h3>Projects</h3>
-        <div id='project-nav'>
-          <div id='splore'>
-            <div>SPLORE</div>
+        <div id='skills-page'>
+          <h2>MY SKILLS</h2>
+          <div class='row'>
+            <div class='col-sm-4'>
+              <img id='bio-pic' class='img-responsive' src='images/me.png' alt='Mark'>
+            </div>
+            <div class='col-sm-8'>
+              <p>I am currently studying back-end web development at Epicodus. I first discovered programming in college through online tutorials, and it has now become my true passion. Coding is like a series of puzzles, each with fun and unique challenges to overcome. I continue programming every day to hone my skills into a new and satisfying career.</p>
+            </div>
           </div>
-          <div id='lrp'>
-            <div>Leaf, Root, &amp; Petal</div>
-          </div>
-          <div id='geo'>
-            <div>Geography Quiz</div>
+          <div class='row'>
+            <div class='col-sm-4'>
+              <h3>Languages</h3>
+              <div class='skill lang'>
+                <p>HTML</p>
+              </div>
+              <div class='skill lang'>
+                <p>CSS</p>
+              </div>
+              <div class='skill lang'>
+                <p>JavaScript</p>
+              </div>
+              <div class='skill lang'>
+                <p>TypeScript</p>
+              </div>
+              <div class='skill lang'>
+                <p>PHP</p>
+              </div>
+              <div class='skill lang'>
+                <p>MySQL</p>
+              </div>
+            </div>
+            <div class='col-sm-4'>
+              <h3>Frameworks</h3>
+              <div class='skill frame'>
+                <p>Angular2</p>
+              </div>
+              <div class='skill frame'>
+                <p>Ember</p>
+              </div>
+              <div class='skill frame'>
+                <p>Silex</p>
+              </div>
+              <div class='skill frame'>
+                <p>Drupal</p>
+              </div>
+            </div>
+            <div class='col-sm-4'>
+              <h3>Other</h3>
+              <div class='skill other'>
+                <p>Git</p>
+              </div>
+              <div class='skill other'>
+                <p>TDD</p>
+              </div>
+              <div class='skill other'>
+                <p>Firebase</p>
+              </div>
+              <div class='skill other'>
+                <p>Twig</p>
+              </div>
+            </div>
           </div>
         </div>
-        <hr>
-        <div id='about'>About Me</div>
-      </div><!-- #sidebar -->
-    </div><!-- .row -->
-  </div><!-- .container -->
+      </div><!-- .wrapper -->
+    </div><!-- #main -->
+  </div><!-- .row -->
 </body>
 </html>
