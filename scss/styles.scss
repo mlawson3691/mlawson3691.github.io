@@ -1,0 +1,144 @@
+/*======= PAGE SETUP =======*/
+
+$darkGray: #595959;
+$gray: #999999;
+$lightGray: #bfbfbf;
+
+body {
+  font-size: 2em;
+  font-weight: 200;
+  color: $darkGray;
+}
+
+.wrapper {
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+
+/*======= NAVIGATION =======*/
+
+.navbar{
+  padding-top: 40px;
+  border-bottom: 1px solid gray;
+  background: $gray;
+  color: white;
+
+  .navbar-brand {
+    font-size: 125%;
+    color: white;
+  }
+
+  .small {
+    font-size: 90%;
+    margin-top: 1.2em;
+    padding-left: 2em;
+    font-weight: 200;
+  }
+
+  .contact-icon {
+    width: 48px;
+    border-radius: 100%;
+
+    &:hover {
+      // border: 1px solid $darkGray;
+      margin-top: -2px;
+      box-shadow: 4px 4px 4px $lightGray;
+    }
+  }
+}
+
+
+/*======= SIDEBAR =======*/
+
+#sidebar {
+  text-align: center;
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  #project-nav > div {
+    margin-bottom: 5px;
+    border: 1px solid $gray;
+    height: 200px;
+
+    &:hover {
+      border-color: $darkGray;
+      color: white;
+      cursor: pointer;
+    }
+
+    div {
+      position: relative;
+      top: 0;
+      height: 200px;
+      width: 100%;
+      opacity: 0;
+      font-size: 1.5em;
+      padding-top: 80px;
+
+      &:hover {
+        background: #000;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  #about {
+    cursor: pointer;
+    border: 1px solid $gray;
+    padding: 10px;
+
+    &:hover {
+      background: #000;
+      opacity: 0.6;
+      color: #fff;
+      border-color: $darkGray;
+    }
+  }
+
+  #splore {
+    background: url('../../images/splore.png') center top no-repeat;
+    background-size: cover;
+  }
+
+  #lrp {
+    background: url('../../images/lrp.png') center top no-repeat;
+    background-size: cover;
+  }
+
+  #geo {
+    background: url('../../images/geo.png') center top no-repeat;
+    background-size: cover;
+  }
+}
+
+
+/*======= MAIN =======*/
+
+#main {
+
+  img {
+    border: 1px solid $gray;
+    margin: 5px 0 20px 0;
+  }
+
+  a:hover {
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .project {
+    display: none;
+
+    .project-title, .project-link {
+      display: inline-block;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+
+}
