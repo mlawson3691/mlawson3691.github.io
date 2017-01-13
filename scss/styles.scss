@@ -159,10 +159,18 @@ body {
   #skills-page {
     display: none;
 
+    #skill-lists {
+      margin-top: 40px;
+    }
+
     #bio-pic {
       width: auto;
       margin: 0 auto;
       border-radius: 50%;
+    }
+
+    h2 {
+      margin-bottom: 20px;
     }
 
     h3 {
