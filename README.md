@@ -1,21 +1,19 @@
-# Georgraphy Quiz
+# Portfolio
 
-#### A JavaScript application using the Google Maps API, October 13th, 2016
+#### A portfolio of my recent work, January 12th, 2017
 
-#### By Mark Lawson & Katy Henning
+#### By Mark Lawson
 
 ## Description
 
-This application is an exercise in modern JavaScript using Node.js and Gulp. Node.js is used to create a local development server, while Gulp manages the project's assets. The app serves as a  In addition, the application is styled with Bootstrap and Sass.
+This application serves as a personal portfolio and is built with JavaScript. Node.js creates a local development server, while Gulp manages the project's assets. In addition, the application is styled with Bootstrap and Sass.
 
 ## Setup/Installation Instructions
 
 * Clone the repository
 * Using the command line, navigate to the project's root directory
 * Install dependencies by running $ npm install and $ bower install
-* Create a .env file in the root directory of the project and fill with: exports.apiKey = "";
-* Retreive a free API Key from the Google Maps API online (https://developers.google.com/maps/documentation/javascript/get-api-key) and insert it between the quotes in the .env file.
-* Launch the local development server by running $ gulp serve
+* Build and launch the local development server by running $ gulp build and $ gulp serve
 
 ## Known Bugs
 
@@ -34,11 +32,10 @@ Please report any bugs or issues to mlawson3691@gmail.com.
 * NPM
 * Gulp
 * JSHint
-* Google Maps API
 * Bootstrap
 
 ### License
 
 *This application is licensed under the MIT license.*
 
-Copyright (c) 2016 Mark Lawson & Katy Henning
+Copyright (c) 2017 Mark Lawson
