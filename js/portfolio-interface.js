@@ -2,7 +2,7 @@ var Portfolio = require('./../js/portfolio.js').portfolioModule;
 
 $(document).ready(function() {
 
-  $('.displayed-project').fadeIn();
+  $('#skills-page').fadeIn();
 
   // show skills page
   $('#skills').click(function() {
