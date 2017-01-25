@@ -7,7 +7,7 @@ $lightGray: #bfbfbf;
 body {
   font-size: 2em;
   font-weight: 200;
-  font-family: monospace;
+  font-family: 'Arsenal', sans-serif;
   color: $darkGray;
 }
 
@@ -20,7 +20,7 @@ body {
 
 #sidebar {
   text-align: center;
-  background: $gray;
+  background: #5a7196;
   color: white;
   text-decoration: none;
   padding-left: 2.5%;
@@ -62,7 +62,6 @@ body {
 
   #skills {
     cursor: pointer;
-    border: 1px solid $gray;
 
     &:hover {
       background: #000;
@@ -74,7 +73,7 @@ body {
   #project-nav > div {
     margin-bottom: 10px;
     border: 1px solid $darkGray;
-    height: 200px;
+    height: 160px;
 
     &:hover {
       border-color: #000;
@@ -94,14 +93,14 @@ body {
     .menu-project-title {
       font-size: 1.5em;
       position: relative;
-      top: -115px;
+      top: -105px;
       display: none;
     }
 
     .screen {
       position: relative;
       top: 0;
-      height: 198px;
+      height: 158px;
       opacity: 0;
     }
   }
@@ -114,6 +113,11 @@ body {
   #lrp {
     background: url('../../images/lrp.png') center top no-repeat;
     background-size: cover;
+  }
+
+  #dungeon {
+  background: url('../../images/game.png') center top no-repeat;
+  background-size: cover;
   }
 
   #geo {
@@ -180,10 +184,13 @@ body {
     .skill {
       text-align: center;
       border: 1px solid $gray;
+      opacity: 0;
       width: 80%;
       margin-left: 10%;
       margin-bottom: 10px;
       padding-top: 5px;
+      -webkit-transition: all 0.5s linear;
+      transition: all 0.5s linear;
     }
 
     .lang {
