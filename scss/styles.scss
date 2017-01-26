@@ -18,22 +18,54 @@ body {
 
 /*======= SIDEBAR =======*/
 
-#sidebar {
+#sidebar1 {
+  width: 25%;
+  float: left;
   text-align: center;
   background: #5a7196;
   color: white;
   text-decoration: none;
   padding-left: 2.5%;
+  padding-right: 2.5%;
   height: 100%;
   border-right: 1px solid $darkGray;
 
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
   h1 {
     padding-top: 50px;
+    text-shadow: 2px 2px 2px $darkGray;
   }
 
   h3 {
     margin: 0;
     padding: 20px 0;
+  }
+
+  .smaller {
+    margin: 10px 0 25px 0;
+    font-weight: 200;
+    text-shadow: 2px 2px 2px $darkGray;
+  }
+}
+
+#sidebar2 {
+  width: 25%;
+  clear: left;
+  text-align: center;
+  background: #5a7196;
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-top: 25px;
+  height: 100%;
+  border-right: 1px solid $darkGray;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    float: left;
   }
 
   hr {
@@ -42,11 +74,6 @@ body {
 
   a {
     text-decoration: none;
-  }
-
-  .smaller {
-    margin: 10px 0 50px 0;
-    font-weight: 200;
   }
 
   .contact-icon {
@@ -62,12 +89,18 @@ body {
 
   #skills {
     cursor: pointer;
+    margin: 0;
+    padding: 15px 0;
 
     &:hover {
       background: #000;
       opacity: 0.6;
       border-color: $darkGray;
     }
+  }
+
+  #project-nav {
+    padding: 0 10px;
   }
 
   #project-nav > div {
@@ -127,6 +160,10 @@ body {
 
   #footer {
     margin: 200px 0 50px 0;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 0px;
+    }
   }
 }
 
@@ -134,8 +171,14 @@ body {
 /*======= MAIN =======*/
 
 #main {
+  width: 75%;
+  float: right;
+  padding: 50px 10px 0 10px;
 
-  padding-top: 50px;
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+    width: 100%;
+  }
 
   .project img {
     border: 1px solid $gray;
@@ -155,6 +198,10 @@ body {
       display: inline-block;
     }
 
+    .project-title {
+        text-shadow: 2px 2px 2px $lightGray;
+    }
+
     p {
       text-align: justify;
     }
@@ -171,10 +218,13 @@ body {
       width: auto;
       margin: 0 auto;
       border-radius: 50%;
+      border: 1px solid black;
+      box-shadow: 1px 1px 1px $lightGray;
     }
 
     h2 {
       margin-bottom: 20px;
+      text-shadow: 2px 2px 2px $lightGray;
     }
 
     h3 {
@@ -184,6 +234,7 @@ body {
     .skill {
       text-align: center;
       border: 1px solid $gray;
+      border-radius: 5px;
       opacity: 0;
       width: 80%;
       margin-left: 10%;
@@ -191,6 +242,7 @@ body {
       padding-top: 5px;
       -webkit-transition: all 0.5s linear;
       transition: all 0.5s linear;
+      box-shadow: 1px 1px 1px $lightGray;
     }
 
     .lang {
@@ -205,7 +257,6 @@ body {
       background: lightYellow;
     }
   }
-
 }
 
 @media screen and (min-width: 512px) {

@@ -22,6 +22,7 @@ $(document).ready(function() {
 
   // show skills page
   $('#skills').click(function() {
+    $('html, body').animate({scrollTop: 0}, 'slow');
     $('.project').each(function() {
       $(this).fadeOut();
     });
@@ -49,6 +50,7 @@ $(document).ready(function() {
       var current = $(this).children('h2').text();
       if (clicked === current) {
         var _this = $(this);
+        $('html, body').animate({scrollTop: 0}, 'slow');
         setTimeout(function(){
           _this.fadeIn();
         }, 500);
